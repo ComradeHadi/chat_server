@@ -1,0 +1,170 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'E:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'E:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'C:\\wamp\\www\\NodeApi2\\app',
+1 verbose cli   'install',
+1 verbose cli   'angular-ui-calendar' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose node symlink E:\Program Files\nodejs\\node.exe
+5 warn package.json app@1.0.0 No description
+6 warn package.json app@1.0.0 No repository field.
+7 warn package.json app@1.0.0 No README data
+8 verbose readDependencies using package.json deps
+9 verbose cache add [ 'install', null ]
+10 verbose cache add name=undefined spec="install" args=["install",null]
+11 verbose parsed url { protocol: null,
+11 verbose parsed url   slashes: null,
+11 verbose parsed url   auth: null,
+11 verbose parsed url   host: null,
+11 verbose parsed url   port: null,
+11 verbose parsed url   hostname: null,
+11 verbose parsed url   hash: null,
+11 verbose parsed url   search: null,
+11 verbose parsed url   query: null,
+11 verbose parsed url   pathname: 'install',
+11 verbose parsed url   path: 'install',
+11 verbose parsed url   href: 'install' }
+12 verbose cache add [ 'angular-ui-calendar', null ]
+13 verbose cache add name=undefined spec="angular-ui-calendar" args=["angular-ui-calendar",null]
+14 verbose parsed url { protocol: null,
+14 verbose parsed url   slashes: null,
+14 verbose parsed url   auth: null,
+14 verbose parsed url   host: null,
+14 verbose parsed url   port: null,
+14 verbose parsed url   hostname: null,
+14 verbose parsed url   hash: null,
+14 verbose parsed url   search: null,
+14 verbose parsed url   query: null,
+14 verbose parsed url   pathname: 'angular-ui-calendar',
+14 verbose parsed url   path: 'angular-ui-calendar',
+14 verbose parsed url   href: 'angular-ui-calendar' }
+15 silly lockFile 89fb511f-install install
+16 verbose lock install E:\Users\Admin2\AppData\Roaming\npm-cache\89fb511f-install.lock
+17 silly lockFile 7dacebc2-angular-ui-calendar angular-ui-calendar
+18 verbose lock angular-ui-calendar E:\Users\Admin2\AppData\Roaming\npm-cache\7dacebc2-angular-ui-calendar.lock
+19 silly lockFile 89fb511f-install install
+20 silly lockFile 89fb511f-install install
+21 silly lockFile 7dacebc2-angular-ui-calendar angular-ui-calendar
+22 silly lockFile 7dacebc2-angular-ui-calendar angular-ui-calendar
+23 verbose addNamed [ 'install', '' ]
+24 verbose addNamed [ null, '*' ]
+25 silly lockFile cadb329f-install install@
+26 verbose lock install@ E:\Users\Admin2\AppData\Roaming\npm-cache\cadb329f-install.lock
+27 verbose addNamed [ 'angular-ui-calendar', '' ]
+28 verbose addNamed [ null, '*' ]
+29 silly lockFile d7148e9f-angular-ui-calendar angular-ui-calendar@
+30 verbose lock angular-ui-calendar@ E:\Users\Admin2\AppData\Roaming\npm-cache\d7148e9f-angular-ui-calendar.lock
+31 silly addNameRange { name: 'install', range: '*', hasData: false }
+32 verbose request where is /install
+33 verbose request registry https://registry.npmjs.org/
+34 verbose request id 5894021c64db90fa
+35 verbose url raw /install
+36 verbose url resolving [ 'https://registry.npmjs.org/', './install' ]
+37 verbose url resolved https://registry.npmjs.org/install
+38 verbose request where is https://registry.npmjs.org/install
+39 info trying registry request attempt 1 at 15:11:36
+40 http GET https://registry.npmjs.org/install
+41 silly addNameRange { name: 'angular-ui-calendar', range: '*', hasData: false }
+42 verbose request where is /angular-ui-calendar
+43 verbose request registry https://registry.npmjs.org/
+44 verbose url raw /angular-ui-calendar
+45 verbose url resolving [ 'https://registry.npmjs.org/', './angular-ui-calendar' ]
+46 verbose url resolved https://registry.npmjs.org/angular-ui-calendar
+47 verbose request where is https://registry.npmjs.org/angular-ui-calendar
+48 info trying registry request attempt 1 at 15:11:36
+49 http GET https://registry.npmjs.org/angular-ui-calendar
+50 http 200 https://registry.npmjs.org/install
+51 silly registry.get cb [ 200,
+51 silly registry.get   { date: 'Thu, 26 Feb 2015 14:10:38 GMT',
+51 silly registry.get     server: 'CouchDB/1.6.1 (Erlang OTP/R14B04)',
+51 silly registry.get     etag: '"6TZ89N5ULJLHREEV9I62MMA80"',
+51 silly registry.get     'content-type': 'application/json',
+51 silly registry.get     'cache-control': 'max-age=60',
+51 silly registry.get     'content-length': '10656',
+51 silly registry.get     'accept-ranges': 'bytes',
+51 silly registry.get     via: '1.1 varnish',
+51 silly registry.get     age: '50',
+51 silly registry.get     'x-served-by': 'cache-ams4126-AMS',
+51 silly registry.get     'x-cache': 'HIT',
+51 silly registry.get     'x-cache-hits': '2',
+51 silly registry.get     'x-timer': 'S1424959838.716083,VS0,VE0',
+51 silly registry.get     vary: 'Accept',
+51 silly registry.get     'keep-alive': 'timeout=10, max=50',
+51 silly registry.get     connection: 'Keep-Alive' } ]
+52 http 404 https://registry.npmjs.org/angular-ui-calendar
+53 verbose headers { date: 'Thu, 26 Feb 2015 14:10:38 GMT',
+53 verbose headers   server: 'CouchDB/1.6.1 (Erlang OTP/R14B04)',
+53 verbose headers   'content-type': 'application/json',
+53 verbose headers   'cache-control': 'max-age=0',
+53 verbose headers   'content-length': '52',
+53 verbose headers   'accept-ranges': 'bytes',
+53 verbose headers   via: '1.1 varnish',
+53 verbose headers   age: '0',
+53 verbose headers   'x-served-by': 'cache-ams4124-AMS',
+53 verbose headers   'x-cache': 'MISS',
+53 verbose headers   'x-cache-hits': '0',
+53 verbose headers   'x-timer': 'S1424959838.715632,VS0,VE103',
+53 verbose headers   'keep-alive': 'timeout=10, max=50',
+53 verbose headers   connection: 'Keep-Alive' }
+54 silly registry.get cb [ 404,
+54 silly registry.get   { date: 'Thu, 26 Feb 2015 14:10:38 GMT',
+54 silly registry.get     server: 'CouchDB/1.6.1 (Erlang OTP/R14B04)',
+54 silly registry.get     'content-type': 'application/json',
+54 silly registry.get     'cache-control': 'max-age=0',
+54 silly registry.get     'content-length': '52',
+54 silly registry.get     'accept-ranges': 'bytes',
+54 silly registry.get     via: '1.1 varnish',
+54 silly registry.get     age: '0',
+54 silly registry.get     'x-served-by': 'cache-ams4124-AMS',
+54 silly registry.get     'x-cache': 'MISS',
+54 silly registry.get     'x-cache-hits': '0',
+54 silly registry.get     'x-timer': 'S1424959838.715632,VS0,VE103',
+54 silly registry.get     'keep-alive': 'timeout=10, max=50',
+54 silly registry.get     connection: 'Keep-Alive' } ]
+55 silly lockFile d7148e9f-angular-ui-calendar angular-ui-calendar@
+56 silly lockFile d7148e9f-angular-ui-calendar angular-ui-calendar@
+57 silly addNameRange number 2 { name: 'install', range: '*', hasData: true }
+58 silly addNameRange versions [ 'install',
+58 silly addNameRange   [ '0.1.1',
+58 silly addNameRange     '0.1.2',
+58 silly addNameRange     '0.1.3',
+58 silly addNameRange     '0.1.4',
+58 silly addNameRange     '0.1.5',
+58 silly addNameRange     '0.1.6',
+58 silly addNameRange     '0.1.7',
+58 silly addNameRange     '0.1.8' ] ]
+59 verbose addNamed [ 'install', '0.1.8' ]
+60 verbose addNamed [ '0.1.8', '0.1.8' ]
+61 silly lockFile 584c81dc-install-0-1-8 install@0.1.8
+62 verbose lock install@0.1.8 E:\Users\Admin2\AppData\Roaming\npm-cache\584c81dc-install-0-1-8.lock
+63 silly lockFile cb455ad4-js-org-install-install-0-1-8-tgz https://registry.npmjs.org/install/-/install-0.1.8.tgz
+64 verbose lock https://registry.npmjs.org/install/-/install-0.1.8.tgz E:\Users\Admin2\AppData\Roaming\npm-cache\cb455ad4-js-org-install-install-0-1-8-tgz.lock
+65 verbose addRemoteTarball [ 'https://registry.npmjs.org/install/-/install-0.1.8.tgz',
+65 verbose addRemoteTarball   '9980ef93e30dfb534778d163bc86ddd472ad5fe8' ]
+66 info retry fetch attempt 1 at 15:11:37
+67 verbose fetch to= E:\Users\Admin2\AppData\Local\Temp\npm-4564-DhoxZ32Q\registry.npmjs.org\install\-\install-0.1.8.tgz
+68 http GET https://registry.npmjs.org/install/-/install-0.1.8.tgz
+69 http 200 https://registry.npmjs.org/install/-/install-0.1.8.tgz
+70 silly lockFile cb455ad4-js-org-install-install-0-1-8-tgz https://registry.npmjs.org/install/-/install-0.1.8.tgz
+71 silly lockFile cb455ad4-js-org-install-install-0-1-8-tgz https://registry.npmjs.org/install/-/install-0.1.8.tgz
+72 silly lockFile 584c81dc-install-0-1-8 install@0.1.8
+73 silly lockFile 584c81dc-install-0-1-8 install@0.1.8
+74 silly lockFile cadb329f-install install@
+75 silly lockFile cadb329f-install install@
+76 error 404 404 Not Found: angular-ui-calendar
+76 error 404
+76 error 404 'angular-ui-calendar' is not in the npm registry.
+76 error 404 You should bug the author to publish it
+76 error 404 It was specified as a dependency of 'app'
+76 error 404
+76 error 404 Note that you can also install from a
+76 error 404 tarball, folder, or http url, or git url.
+77 error System Windows_NT 6.2.9200
+78 error command "E:\\Program Files\\nodejs\\\\node.exe" "E:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "C:\\wamp\\www\\NodeApi2\\app" "install" "angular-ui-calendar"
+79 error cwd C:\wamp\www\NodeApi2\app
+80 error node -v v0.10.35
+81 error npm -v 1.4.28
+82 error code E404
+83 verbose exit [ 1, true ]

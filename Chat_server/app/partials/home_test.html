@@ -1,0 +1,117 @@
+<div class="row" style="margin-top: 10px">
+
+
+    <div class="col-md-6">
+
+
+        <div style="margin-left: 100px;">
+
+
+            <!-- When this element is clicked, hide the tooltip -->
+            <div id="main" ng-click="hideTooltip()">
+
+                <!-- This is the tooltip. It is shown only when the showtooltip variable is truthful -->
+                <div class="user_tooltip  animation-slideExpandUp" ng-click="$event.stopPropagation()"
+                     ng-show="showtooltip">
+
+
+                    <ul>
+                        <li ng-repeat="user in users " ng-click="choose_current_user(user)">
+                            <a href="javascript:void(0)"><img class="users_list" ng-src="{{user.avatar}}"/></a>
+
+                        </li>
+                    </ul>
+
+
+                </div>
+
+
+                <img ng-click="toggleTooltip($event)" class="search_str_header" ng-src="{{ current_img_avt }}">
+
+            </div>
+
+
+            <div class="bar">
+                <!-- Create a binding between the searchString model and the text field -->
+                <input type="text" ng-model="searchString" placeholder="Enter your search terms"/>
+            </div>
+
+            <ul>
+                <li class="user_chat ng-animate ng-enter ng-enter-active"
+                    ng-repeat="user in users  |  searchFor:searchString " id="li{{user.id}}"
+                    ng-click="choose_user(user)">
+                    <a href="javascript:void(0)"><img ng-src="{{user.avatar}}"/></a>
+
+                    <p>{{user.name}} : {{ user.age }}</p>
+
+                </li>
+            </ul>
+
+        </div>
+
+
+    </div>
+
+    <div class="col-md-6">
+
+
+
+
+        <div class="selected_user_bloc animation-slideExpandUp" >
+
+            <ul>
+                <li class="selected_user ng-animate ng-enter ng-enter-active" ng-repeat="user in selected_users " >
+                    <a href="javascript:void(0)"><img ng-click="romove_user($index)" class="selected_user_img animation-slideExpandUp" ng-src="{{user.chat_user_img_path}}"/></a>
+
+                </li>
+            </ul>
+
+
+        </div>
+
+
+
+        <div class="msg_bar">
+
+
+            <div id="msgs_area" class="msgs_area">
+
+            <div id="msgs"  ng-repeat="msg in chat_box">
+                <div ng-if="is_current_user(msg)" class="current_user_msg animation-stretchLeft">{{ msg.message}}</div>
+                <div ng-if="!is_current_user(msg)"  class="sender_msg animation-stretchRight"><img class="sender_path" src="{{ msg.from_path }}"/>&nbsp;&nbsp;&nbsp;{{ msg.message}}</div>
+
+            </div>
+
+                </div>
+
+
+            <div>
+                <label class="is_typing_class"></label>
+                <input ng-keyup="user_typing()" type="text" ng-model="msg" placeholder="Enter your message" />
+
+                <button  ng-click="send_message()" class="send_btn">Send</button>
+            </div>
+
+
+        </div>
+
+
+
+        </div>
+
+
+    </div>
+
+
+</div>
+
+
+<script>
+
+
+</script>
+
+
+
+
+

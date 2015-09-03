@@ -1,0 +1,13 @@
+@media screen and (max-width: 414px){
+
+    .wrapper-dropdown-2 {
+        width: 99%;
+    }
+
+    .btn-group{
+        margin-left: 10%;
+    }
+    #option2_lab{
+        width: 34%;
+    }
+}
